@@ -118,6 +118,13 @@ Hello world # 1
 Hello world # 2
 ```
 
+Gratulerer! Du har nå et oppsett som fungerer! Du kan nå:
+ - Kommunisere med mikrokontrolleren
+ - Lage programmer
+ - Laste opp programmer til mikrokontrolleren
+ - Se linjer som mikrokontrolleren skriver til serieporten (tilsvarende logging til konsoll for "vanlige" programmer)
+ - Resette mikrokontrolleren
+ 
 ## Feilsøking
 
 Hvis du får en feilmelding med teksten ```Resource busy: '/dev/cu.usbserial-XXX``` eller liknende, gjør du følgende:
