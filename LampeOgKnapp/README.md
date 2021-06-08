@@ -4,7 +4,7 @@
 
 Vi begynner først med en svært enkel krets:
 
-![](./5V_Lampe.png)
+![](./lyserkonstant/5V_Lampe.png)
 
 ### Du trenger
 
@@ -23,9 +23,9 @@ Funksjonen til motstanden er å begrense hvor mye strøm som går gjennom LED-en
 
 Koble opp slik:
 
-![](./5V_Lampe_bb.png)
+![](./lyserkonstant/5V_Lampe_bb.png)
 
-![](./5V_Lampe_photo.png)
+![](./lyserkonstant/5V_Lampe_photo.png)
 
 
 
