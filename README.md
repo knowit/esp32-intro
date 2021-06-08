@@ -11,7 +11,13 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 
 ## Innhold
 
-* [Kom i gang](./KomIGang/README.md)
+* ESP32- CAM
+* [Hvordan bruke breadboard](BrukAvBreadboard/README.md)
+* [Enkle analoge kretser](LampeOgKnapp/README.md)
+  
+
+## Gamle sider
+
 * [Styr LED fra knapp](./StyrLEDFraKnapp/README.md)
 * [Les potmeter](./LesPotmeter/README.md)
 * [Lag ulyder med høyttaler](./PotmeterOgHoyttaler/README.md)
