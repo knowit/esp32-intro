@@ -1,4 +1,4 @@
-## Stye LED fra knapp
+## Styr LED fra knapp
 
 ### Funksjonalitet
 
