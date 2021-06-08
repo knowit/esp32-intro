@@ -24,6 +24,10 @@
 
 ![](./ressurser/styr_led_fra_knapp_bilde.png)
 
+Her er kretsen fra en annen vinkel:
+
+![](./ressurser/styr_led_fra_knapp_bilde_2.png)
+
 
 Motstanden på 10 KOhm som er koblet mellom bryter og jord er en såkalt pull- down motstand, og brukes for å "trekke" signalet ned til jord ( 0 V ). 
 
