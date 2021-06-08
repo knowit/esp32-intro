@@ -1,4 +1,10 @@
-## Styr lampe med en knapp
+## Enkle analoge kretser uten mikrokontroller
+
+Vi skal lage to enkle kretser som ikke bruker datakraften i mikrokontrolleren, men bruker den kun som strømkilde.
+
+Hensikten er å bli kjent med bruk av breadboard og tolkning av enkle elektroniske kretser.
+
+Hvis du har tidligere erfaring med tolkning av kretser og bruk av breadboard, kan du hoppe over disse oppgavene.
 
 ### Lampe som lyser konstant
 
@@ -27,5 +33,26 @@ Koble opp slik:
 
 ![](./lyserkonstant/5V_Lampe_photo.png)
 
+### Lampe med analog knapp
+
+Denne gangen blir det bare bittelittegranne vanskeligere. Vi legger inn en knapp for å styre lampen:
+
+![](./analogknapp/analog_knapp.png)
 
 
+### Du trenger
+
+| Type          | Antall           |  Utseeende |
+| ------------- | :------------- | :----: |
+| LED           | 1    |  ![LED](../img/led.png) (farge kan variere)
+| Trykkbryter	| 1	   |    ![](../img/button.png)
+| Motstand 330 Ohm eller 220 ohm | 1 |  ![](../img/330ohm.png) 	
+| Breadboard (prototypebrett)	| 1 | ![](../img/bb.png)
+| ESP32-CAM | 1 | ![](../img/esp32cam_small.png)
+
+
+Koble opp slik:
+
+![](./analogknapp/analog_knapp_bb.png)
+
+![](./analogknapp/analog_knapp_bilde.png)
