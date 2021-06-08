@@ -13,7 +13,7 @@ Potentiometeret har en variabel motstand som endrer seg når du vrir på det.
 
 | Type          | Antall           | Kommentar  |  Utseeende |
 | ------------- | :------------- |:-----| :----: |
-| Potmeter	| 1 | | ![LED](../img/potmeter.png)
+| Potmeter	| 1 | | ![LED](../img/potmeter.png)
 
 
 ### Konstruksjon
