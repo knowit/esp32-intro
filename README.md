@@ -14,6 +14,7 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 * ESP32- CAM
 * [Hvordan bruke breadboard](BrukAvBreadboard/README.md)
 * [Enkle analoge kretser](LampeOgKnapp/README.md)
+* [Styr LED fra knapp](StyrLEDFraKnapp/README.md)
   
 
 ## Gamle sider
