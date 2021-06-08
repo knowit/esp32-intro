@@ -18,7 +18,7 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 
 ## Gamle sider
 
-* [Styr LED fra knapp](./StyrLEDFraKnapp/README.md)
+* [Styr LED fra knapp](Arduino-StyrLEDFraKnapp/README.md)
 * [Les potmeter](./LesPotmeter/README.md)
 * [Lag ulyder med høyttaler](./PotmeterOgHoyttaler/README.md)
 * [Styr en servo](./StyrServo/README.md)
