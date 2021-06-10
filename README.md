@@ -15,6 +15,7 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 * [Hvordan bruke breadboard](BrukAvBreadboard/README.md)
 * [Enkle analoge kretser](LampeOgKnapp/README.md)
 * [Styr LED fra knapp](StyrLEDFraKnapp/README.md)
+* [WiFi og REST](WiFiOgREST/README.md)
   
 
 ## Gamle sider
