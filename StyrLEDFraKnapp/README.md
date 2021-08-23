@@ -69,7 +69,7 @@ void loop() {
 
 Last opp programmet.
 
-Hvis du er usikker på hvordan du lager og laster opp programmer, se [Installasjon](../InstallasjonPlatformio/installasjon.md) 
+Hvis du er usikker på hvordan du lager og laster opp programmer, se [Installasjon](../InstallasjonPlatformio/README.md) 
 
 Programmet skal nå bli lastet opp. Når opplastingen er ferdig, trykker du på knappen. Lampen (LED) skal da lyse.
 

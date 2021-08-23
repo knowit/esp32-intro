@@ -4,6 +4,8 @@
 * Pek din favorittnettleser på [code.visualstudio.com](https://code.visualstudio.com/)
 * Klikk på **Download**
 * Pakk ut zip- filen
+  
+### Mac
 * Trekk og slipp applikasjonen ```Visual Studio Code``` inn i ```Applications``` 
 * Start ```Visual Studio Code```
 
@@ -17,7 +19,7 @@
 
 Ved programmering av mikrokontrollere bør man alltid begynne med et veldig enkelt program for å sjekke at alt fungerer som det skal.
 
-* Koble ESP32-CAM til en ledig USB-C - port
+* Koble ESP32 til en ledig USB-A - port
 
 * Følg [Quick  Quick Start guide](https://docs.platformio.org/en/latest//integration/ide/vscode.html#quick-start) med noen modifikasjoner (se under)
 
@@ -27,9 +29,10 @@ Ved programmering av mikrokontrollere bør man alltid begynne med et veldig enke
 | Felt | Verdi |
 |------|-------|
 | **Name:** | HelloWorld
-| **Board:** | M5Stack Timer CAM
+| **Board:** | Espressif ESP32 Dev Module
 | **Framework:** | Arduino
 
+* Hvis du får spørsmålet "Do you trust the authors of the files in this folder?", klikk på Trust the authors .. og deretter "Yes, I trust the authors"
 * Istedenfor å kopiere inn kodeeksempelet ````Blink```` inn i ```main.cpp```,  kopierer du inn dette istedet:
 
 ```
@@ -54,12 +57,12 @@ void loop() {
 monitor_speed = 115200
 ```
 
-Seksjonen ```[env:m5stack-timer-cam]``` skal nå se ca. slik ut:
+Seksjonen ```[env:esp32dev]``` skal nå se ca. slik ut:
 
 ```
-[env:m5stack-timer-cam]
+[env:esp32dev]
 platform = espressif32
-board = m5stack-timer-cam
+board = esp32dev
 framework = arduino
 monitor_speed = 115200
 ```
@@ -149,13 +152,14 @@ upload_port = /dev/cu.SLAB_USBtoUART
 monitor_port = /dev/cu.SLAB_USBtoUART
 ```
 
-Seksjonen ```[env:m5stack-timer-cam]``` skal nå se ca. slik ut:
+Seksjonen ```[env:esp32dev]``` skal nå se ca. slik ut:
 
 ```
-[env:m5stack-timer-cam]
+[env:esp32dev]
 platform = espressif32
-board = m5stack-timer-cam
+board = esp32dev
 framework = arduino
+monitor_speed = 115200
 upload_port = /dev/cu.SLAB_USBtoUART
 monitor_port = /dev/cu.SLAB_USBtoUART
 ```

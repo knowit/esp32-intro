@@ -12,6 +12,7 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 ## Innhold
 
 * ESP32- CAM
+* [Innstallasjon av platform.io](InstallasjonPlatformio/README.md)
 * [Hvordan bruke breadboard](BrukAvBreadboard/README.md)
 * [Enkle analoge kretser](LampeOgKnapp/README.md)
 * [Styr LED fra knapp](StyrLEDFraKnapp/README.md)
