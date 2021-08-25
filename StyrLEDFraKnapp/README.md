@@ -14,8 +14,8 @@
 | ------------- | :------------- |:-----| :----: |
 | LED           | 1    | Lampe. Farge og størrelse kan variere | ![LED](../img/led.png)
 | Trykkbryter	| 1	   |   |  ![Switch](../img/button.png)
-| ESP32-CAM | 1 | | ![](../img/esp32cam_small.png)
-| Motstand 330 Ohm | 1 | Denne beskytter LED mot for høy strøm | ![](../img/330ohm.png) 	
+| ESP32         | 1 | | ![](../img/esp32-devkit.jpeg)
+| Motstand 330 Ohm eller 200 ohm | 1 | Denne beskytter LED mot for høy strøm | ![](../img/330ohm.png) 	
 | Motstand 10 k Ohm | 1  | Dette er en såkalt pull- down resistor. Mer info lenger ned på siden | ![](../img/10kohm.png)
 
 ### Konstruksjon
@@ -45,25 +45,25 @@ Lim inn følgende program:
 
 ```
 #include "Arduino.h"
-int grovePin1 = 4; // Yellow
-int grovePin2 = 13; // White
+int buttonPin = 35;
+int ledPin = 32;
 
 // denne variabelen holder på status på knappen
 bool buttonState = LOW;
 
-void setup()  {
-  // konfigurer til å lese verdi (INPUT) fra knapp
-  pinMode(grovePin1, INPUT);
-  // konfigurer til å gi signaler ut til LED (OUTPUT)
-  pinMode(grovePin2, OUTPUT);
+void setup() {
+    Serial.begin(115200);
+    // konfigurer til å lese verdi (INPUT) fra knapp
+    pinMode(buttonPin, INPUT);
+    // konfigurer til å gi signaler ut til LED (OUTPUT)
+    pinMode(ledPin, OUTPUT);
+    Serial.println("Setup OK");
 }
 
-
 void loop() {
-  // les verdi på knapp (av eller på)
-  buttonState = digitalRead(grovePin1);
-  // skriv verdi for å tenne eller slukke lampe
-  digitalWrite(grovePin2, buttonState);
+    buttonState = digitalRead(buttonPin);
+    Serial.println(buttonState);
+    digitalWrite(ledPin, buttonState);
 }
 ```
 
