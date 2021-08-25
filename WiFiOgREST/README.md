@@ -13,29 +13,29 @@ Lin inn følgende program, og sett inn korrekt nettverksnavn og passord i ```sid
 #include "Arduino.h"
 #include "WiFi.h"
 
-int grovePin2 = 13; // White
+int ledPin = 32;
 const char *ssid = "X";
 const char *password = "X";
 
 void setup()
 {
     Serial.begin(115200);
-    pinMode(grovePin2, OUTPUT);
+    pinMode(ledPin, OUTPUT);
     delay(500); // vent litt til seriell kommunikasjon er opprettet
     WiFi.begin(ssid, password);
 
     Serial.println("Connecting to WiFi..");
     while (WiFi.status() != WL_CONNECTED)
     {
-        digitalWrite(grovePin2, HIGH);
+        digitalWrite(ledPin, HIGH);
         delay(250);
-        digitalWrite(grovePin2, LOW);
+        digitalWrite(ledPin, LOW);
         delay(250);
         Serial.print(".");
     }
     Serial.println("");
 
-    digitalWrite(grovePin2, HIGH);
+    digitalWrite(ledPin, HIGH);
 
     Serial.print("Connected to the WiFi network. My IP: ");
     Serial.println(WiFi.localIP());
@@ -65,7 +65,7 @@ Lim inn dette programmet og sett SSID og passord:
 #include "WiFi.h"
 #include <WebServer.h>
 
-int grovePin2 = 13; // White
+int ledPin = 32;
 const char *ssid = "X";
 const char *password = "X";
 
@@ -74,35 +74,33 @@ WebServer server(80);
 
 void ledOn() {
   Serial.println("LED on");
-  digitalWrite(grovePin2, HIGH);
+  digitalWrite(ledPin, HIGH);
   server.send(200, "application/json", "OK");
 }
 
 void ledOff() {
   Serial.println("LED off");
-  digitalWrite(grovePin2, LOW);
+  digitalWrite(ledPin, LOW);
   server.send(200, "application/json", "OK");
 }
 
-void setup()
-{
+void setup() {
     Serial.begin(115200);
-    pinMode(grovePin2, OUTPUT);
+    pinMode(ledPin, OUTPUT);
     delay(500); // vent litt til seriell kommunikasjon er opprettet
     WiFi.begin(ssid, password);
 
     Serial.println("Connecting to WiFi..");
-    while (WiFi.status() != WL_CONNECTED)
-    {
-        digitalWrite(grovePin2, HIGH);
+    while (WiFi.status() != WL_CONNECTED) {
+        digitalWrite(ledPin, HIGH);
         delay(250);
-        digitalWrite(grovePin2, LOW);
+        digitalWrite(ledPin, LOW);
         delay(250);
         Serial.print(".");
     }
     Serial.println("");
 
-    digitalWrite(grovePin2, HIGH);
+    digitalWrite(ledPin, HIGH);
 
     Serial.print("Connected to the WiFi network. My IP: ");
     Serial.println(WiFi.localIP());
@@ -119,6 +117,23 @@ void loop() {
 }
 
 ```
+
+Hvis EP32-en har koblet opp til Wifi skal det vises en melding tilsvarende denne:
+
+```
+Connecting to WiFi..
+......
+Connected to the WiFi network. My IP: 192.168.10.162
+```
+
+Siste linje viser IP-adresse til enheten.
+
+Du kan nå teste ut GET- kallene ved å åpne f.eks disse adressene i en nettleser:
+
+* [http://192.168.10.162/led_on]() - for å skru på LED
+* [http://192.168.10.162/led_off]() - for å skru av LED
+
+**OBS!** Husk å bytte ut til korrekt IP!
 
 ### Kommentarer til programmet:
 
@@ -149,7 +164,7 @@ Lim inn dette programmet:
 #include <WebServer.h>
 #include <ArduinoJson.h>
 
-int grovePin2 = 13; // White
+int ledPin = 32;
 const char *ssid = "X";
 const char *password = "X";
 
@@ -159,8 +174,7 @@ WebServer server(80);
 // JSON data buffer
 StaticJsonDocument<250> jsonDocument;
 
-void handlePost()
-{
+void handlePost() {
     String body = server.arg("plain");
     Serial.print("BODY: ");
     Serial.println(body);
@@ -170,31 +184,29 @@ void handlePost()
     int state = jsonDocument["state"];
     Serial.print("State: ");
     Serial.println(state);
-    digitalWrite(grovePin2, state);
+    digitalWrite(ledPin, state);
 
     // Respond to the client
     server.send(200, "application/json", "{}");
 }
 
-void setup()
-{
+void setup() {
     Serial.begin(115200);
-    pinMode(grovePin2, OUTPUT);
+    pinMode(ledPin, OUTPUT);
     delay(500); // vent litt til seriell kommunikasjon er opprettet
     WiFi.begin(ssid, password);
 
     Serial.println("Connecting to WiFi..");
-    while (WiFi.status() != WL_CONNECTED)
-    {
-        digitalWrite(grovePin2, HIGH);
+    while (WiFi.status() != WL_CONNECTED) {
+        digitalWrite(ledPin, HIGH);
         delay(250);
-        digitalWrite(grovePin2, LOW);
+        digitalWrite(ledPin, LOW);
         delay(250);
         Serial.print(".");
     }
     Serial.println("");
 
-    digitalWrite(grovePin2, HIGH);
+    digitalWrite(ledPin, HIGH);
 
     Serial.print("Connected to the WiFi network. My IP: ");
     Serial.println(WiFi.localIP());
@@ -205,9 +217,8 @@ void setup()
     server.begin();
 }
 
-void loop()
-{
-    server.handleClient(); // håndterer innkomne trafikk
+void loop() {
+    server.handleClient(); // håndterer innkomnende trafikk
 }
 ```
 
@@ -224,6 +235,8 @@ For å skru av LED:
 ```
 curl -d '{"state":"0"}' -H "Content-Type: application/json" -X POST http://192.168.10.154:80/led
 ```
+
+**OBS!** Husk å bytte ut til korrekt IP!
 
 ### Kommentarer til programmet:
 

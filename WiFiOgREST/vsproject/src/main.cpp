@@ -3,7 +3,7 @@
 #include <WebServer.h>
 #include <ArduinoJson.h>
 
-int grovePin2 = 13; // White
+int ledPin = 32;
 const char *ssid = "X";
 const char *password = "X";
 
@@ -20,35 +20,33 @@ void handlePost()
     Serial.println(body);
     deserializeJson(jsonDocument, body);
 
-    // Get RGB components
+    // Hent verdier fra request
     int state = jsonDocument["state"];
     Serial.print("State: ");
     Serial.println(state);
-    digitalWrite(grovePin2, state);
+    digitalWrite(ledPin, state);
 
     // Respond to the client
     server.send(200, "application/json", "{}");
 }
 
-void setup()
-{
+void setup() {
     Serial.begin(115200);
-    pinMode(grovePin2, OUTPUT);
+    pinMode(ledPin, OUTPUT);
     delay(500); // vent litt til seriell kommunikasjon er opprettet
     WiFi.begin(ssid, password);
 
     Serial.println("Connecting to WiFi..");
-    while (WiFi.status() != WL_CONNECTED)
-    {
-        digitalWrite(grovePin2, HIGH);
+    while (WiFi.status() != WL_CONNECTED) {
+        digitalWrite(ledPin, HIGH);
         delay(250);
-        digitalWrite(grovePin2, LOW);
+        digitalWrite(ledPin, LOW);
         delay(250);
         Serial.print(".");
     }
     Serial.println("");
 
-    digitalWrite(grovePin2, HIGH);
+    digitalWrite(ledPin, HIGH);
 
     Serial.print("Connected to the WiFi network. My IP: ");
     Serial.println(WiFi.localIP());
@@ -59,7 +57,6 @@ void setup()
     server.begin();
 }
 
-void loop()
-{
-    server.handleClient(); // håndterer innkomne trafikk
+void loop() {
+    server.handleClient(); // håndterer innkomnende trafikk
 }
