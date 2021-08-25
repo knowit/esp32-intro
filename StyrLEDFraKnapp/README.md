@@ -90,7 +90,7 @@ Programmet fungerer slik:
 Hvis du vil at lampen skal lyse når knappen ikke er trykket inn, og ikke lyse når knappen er trykket inn, så kan du endre siste linje i loop slik:
 
 ```
-digitalWrite(grovePin2, !buttonState);
+digitalWrite(ledPin, !buttonState);
 ```
 
 

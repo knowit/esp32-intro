@@ -17,5 +17,10 @@ void setup() {
 void loop() {
     buttonState = digitalRead(buttonPin);
     Serial.println(buttonState);
-    digitalWrite(ledPin, buttonState);
+    digitalWrite(ledPin, LOW);
+    if( buttonState ) {
+        digitalWrite(ledPin, HIGH);
+        delay(2000);
+    }
+    
 }
