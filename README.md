@@ -24,4 +24,5 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 * [WiFi og REST](./Leksjoner/WiFiOgREST/README.md)
 
 ### Feilsøking
-* [Problemer med seriport](./Feilsoeking/Serieport)
+* [Problemer med seriport](./Feilsoeking/Serieport/README.md)
+* [LED lyser ikke](./Feilsoeking/LEDPoler/README.md)
