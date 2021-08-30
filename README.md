@@ -11,7 +11,7 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 
 ### Informasjon
 * [Hvordan bruke breadboard](./Informasjon/BrukAvBreadboard/README.md)
-* ESP32
+* [Om ESP32](./Informasjon/ESP32/README.md)
 
 ### Installasjon og Oppsett
 * [Innstallasjon av platform.io](./InstallasjonOgOppsett/InstallasjonPlatformio/README.md)
