@@ -22,6 +22,8 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 * [Hello World](./Leksjoner/HelloWorld/README.md)
 * [Styr LED fra knapp](./Leksjoner/StyrLEDFraKnapp/README.md)
 * [WiFi og REST](./Leksjoner/WiFiOgREST/README.md)
+* [Les potmeter](./Leksjoner/LesPotmeter/README.md)
+* [LED og PWM](./Leksjoner/LED_PWM/README.md)
 
 ### Feilsøking
 * [Problemer med seriport](./Feilsoeking/Serieport/README.md)
