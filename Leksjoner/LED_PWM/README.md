@@ -4,7 +4,7 @@ I denne oppgaven skal du kontrollere lysintensiteten på en LED.
 
 Vi styrer intensiteten til lampen ved ved å å slå den fort av og på i høyt temp.  Dette kalles PWM eller pulse width modulation. 
 
-Det man gjør er at man justerer forholdet mellom hvor ofte LEDen er på, og når den er av.
+Se også: [Wikipedia:Pulse-width modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation)
 
 ESP32 har såkalte PWM- kanaler tilgjengelig som gir lavnivåfunksjonalitet for dette. Sammenliknet med en del andre mikrokontrollere er ESP32 litt mer tungvindt å programmere, men tilgjengelig en del mer fleksibel på PWM.
 
