@@ -16,10 +16,10 @@ Vi begynner først med en svært enkel krets:
 
 | Type          | Antall           |  Utseeende |
 | ------------- | :------------- | :----: |
-| LED           | 1    |  ![LED](../img/led.png) (farge kan variere)
-| Motstand 330 Ohm eller 220 ohm | 1 |  ![](../img/330ohm.png) 	
-| Breadboard (prototypebrett)	| 1 | ![](../img/bb.png)
-| ESP32 | 1 | ![](../img/esp32-devkit.jpeg)
+| LED           | 1    |  ![LED](../../img/led.png) (farge kan variere)
+| Motstand 330 Ohm eller 220 ohm | 1 |  ![](../../img/330ohm.png) 	
+| Breadboard (prototypebrett)	| 1 | ![](../../img/bb.png)
+| ESP32 | 1 | ![](../../img/esp32-devkit.jpeg)
 
 * ESP32 fungerer som en statisk strømkilde og mer merket ```5V``` i diagrammet
 * Strømmen går fra strømkilden gjennom motstanderen og så inn i LED-en (lampen)
@@ -44,11 +44,11 @@ Denne gangen blir det bare bittelittegranne vanskeligere. Vi legger inn en knapp
 
 | Type          | Antall           |  Utseeende |
 | ------------- | :------------- | :----: |
-| LED           | 1    |  ![LED](../img/led.png) (farge kan variere)
-| Trykkbryter	| 1	   |    ![](../img/button.png)
-| Motstand 330 Ohm eller 220 ohm | 1 |  ![](../img/330ohm.png) 	
-| Breadboard (prototypebrett)	| 1 | ![](../img/bb.png)
-| ESP32-CAM | 1 | ![](../img/esp32cam_small.png)
+| LED           | 1    |  ![LED](../../img/led.png) (farge kan variere)
+| Trykkbryter	| 1	   |    ![](../../img/button.png)
+| Motstand 330 Ohm eller 220 ohm | 1 |  ![](../../img/330ohm.png) 	
+| Breadboard (prototypebrett)	| 1 | ![](../../img/bb.png)
+| ESP32-CAM | 1 | ![](../../img/esp32cam_small.png)
 
 
 Koble opp slik:
