@@ -1,24 +1,75 @@
 
+## Les potmeter
+
+Et potmeter (fullt navn: på engelsk: potentiometer, på nynorsk: potensiometer) er en komponent som endrer motstand når du vrir på akselen. Mange kjenner disse igjen fra volumkontroller o.l.
+
+Potmeter er en analog innenhet. Den midterste foten gir en spenning som ligger mellom de to andre avhengig av hvor posisjon på meteret.
+
+For å lese verdier fra analoge innenheter, må vi bruke en ADC (Analog Digital Converter) som er innebygget i ESP32. For å gjøre dette, bruker vi funksjonen ```analogRead```.
+
+### Funksjonalitet
+
+ESP32-en leser av potmeteret og rapporterer verdien tilbake til datamaskinen over serieport.
+
+Potentiometeret har en variabel motstand som endrer seg når du vrir på det.
+
+### Du trenger
+
+| Type          | Antall           | Kommentar  |  Utseeende |
+| ------------- | :------------- |:-----| :----: |
+| Potmeter	| 1 | | ![LED](../../img/potmeter.png)
+| Breadboard (prototypebrett)	| 1 | | ![](../../img/bb.png)
+| ESP32 | 1 | | ![](../../img/esp32-devkit.jpeg)
 
 
-### Styr LED med PWM
-Vi skal nå lysintensiteten på en LED. 
+### Konstruksjon
 
-Vi styrer intensiteten til lampen ved ved å å slå den fort av og på i høyt temp.  Dette kalles PWM eller pulse width modulation. 
+![](LesPotmeter_bb.png)
+![](LesPotmeter_bilde_1.jpg)
+![](LesPotmeter_bilde_2.jpg)
 
-Det man gjør er at man justerer forholdet mellom hvor ofte LEDen er på, og når den er av.
+### Program
 
-Bruk funksjonen ```analogWrite``` for å styre LED-en ved hjelp av PWM. Verdien 255 er full styrke, og verdien 0 er lavest styrke. Mer info:
+Legg inn følgende program:
 
-* [https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)
+```
+#include "Arduino.h"
+int potPin = 35;
 
-Det du skal gjøre i denne oppgaven er å lage et program som gjør dette:
+void setup() {
+    Serial.begin(115200);
+    // konfigurer til å lese verdi (INPUT) fra potmeter
+    pinMode(potPin, INPUT);
+}
 
-1. Les potmeterets verdi (du får det som en int mellom 0 og 1023.
-2. Dimme LEDen tilsvarende verdien på potmeteret.
+void loop() {
+    Serial.println(analogRead(potPin));
+    delay(100);    
+}
+```
 
-Oppkobling:
+Når programmet er lastet opp og kjører, vrir du på potmeteret og ser at det leses ut ulike verider:
 
-![](./pot_pwm_bb.png)
 
-Problemer? Se [fasit](./fasit.md))
+```
+
+1849
+1517
+999
+494
+35
+0
+0
+0
+0
+0
+0
+102
+459
+715
+831
+
+```
+
+
+

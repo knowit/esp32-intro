@@ -8,6 +8,15 @@ Det man gjør er at man justerer forholdet mellom hvor ofte LEDen er på, og nå
 
 ESP32 har såkalte PWM- kanaler tilgjengelig som gir lavnivåfunksjonalitet for dette. Sammenliknet med en del andre mikrokontrollere er ESP32 litt mer tungvindt å programmere, men tilgjengelig en del mer fleksibel på PWM.
 
+### Du trenger
+
+| Type          | Antall           | Kommentar  |  Utseeende |
+| ------------- | :------------- |:-----| :----: |
+| Potmeter	| 1 | | ![LED](../../img/potmeter.png)
+| Breadboard (prototypebrett)	| 1 | | ![](../../img/bb.png)
+| ESP32 | 1 | | ![](../../img/esp32-devkit.jpeg)
+| LED           | 1    | Lampe. Farge og størrelse kan variere | ![LED](../../img/led.png)
+| Motstand 330 Ohm eller 200 ohm | 1 | Denne beskytter LED mot for høy strøm | ![](../../img/330ohm.png)
 
 ### Konstruksjon
 
