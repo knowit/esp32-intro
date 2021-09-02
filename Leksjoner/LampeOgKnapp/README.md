@@ -33,8 +33,8 @@ Koble opp slik:
 
 ![](./lyserkonstant/5V_Lampe_bb.png)
 
+![](./lyserkonstant/)
 ![](./lyserkonstant/analog_knapp_bilde_1.jpg)
-![](./lyserkonstant/analog_knapp_bilde_2.jpg)
 
 ### Lampe med analog knapp
 
@@ -58,4 +58,5 @@ Koble opp slik:
 
 ![](./analogknapp/analog_knapp_bb.png)
 
-![](./analogknapp/analog_knapp_bilde.png)
+![](./analogknapp/analog_knapp_bilde_1.jpg)
+![](./analogknapp/analog_knapp_bilde_2.jpg)
