@@ -11,6 +11,8 @@ Hvis du har tidligere erfaring med tolkning av kretser og bruk av breadboard, ka
 Vi begynner først med en svært enkel krets:
 
 ![](./lyserkonstant/5V_Lampe.png)
+![](./lyserkonstant/lyserkontant_bilde_1.jpg)
+![](./lyserkonstant/lyserkontant_bilde_2.jpg)
 
 ### Du trenger
 
@@ -31,7 +33,8 @@ Koble opp slik:
 
 ![](./lyserkonstant/5V_Lampe_bb.png)
 
-![](./lyserkonstant/5V_Lampe_photo.png)
+![](./lyserkonstant/analog_knapp_bilde_1.jpg)
+![](./lyserkonstant/analog_knapp_bilde_2.jpg)
 
 ### Lampe med analog knapp
 
