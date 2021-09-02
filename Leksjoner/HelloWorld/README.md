@@ -36,7 +36,7 @@ void loop() {
 }
 ```
 
-* Åpne ```platform.io``` og legg til en ny linje:
+* Åpne filen ```platform.ini``` og legg til en ny linje:
 
 ```
 monitor_speed = 115200
