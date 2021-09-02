@@ -51,7 +51,7 @@ Denne gangen blir det bare bittelittegranne vanskeligere. Vi legger inn en knapp
 | Trykkbryter	| 1	   |    ![](../../img/button.png)
 | Motstand 330 Ohm eller 220 ohm | 1 |  ![](../../img/330ohm.png) 	
 | Breadboard (prototypebrett)	| 1 | ![](../../img/bb.png)
-| ESP32-CAM | 1 | ![](../../img/esp32cam_small.png)
+| ESP32 | 1 | ![](../../img/esp32-devkit.jpeg)
 
 
 Koble opp slik:
