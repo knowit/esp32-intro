@@ -1,13 +1,26 @@
 # Om ESP32
 
-ESP32 er en serie billige, mikrobrikkere med integrert Wi-Fi og Bluetooth.
-De bruker lite strøm og tar liten plass.
-
-![ESP32](../../img/esp32-devkit.jpeg)
+ESP32 er en serie billige, mikrobrikkere med integrert Wi-Fi og Bluetooth.  De bruker lite strøm og tar liten plass.
 
 ESP32 er designet av Espressif Systems, et Shanghai-basert kinesisk selskap, og er produsert av TSMC ved bruk av deres 40 nm-prosess. Den er en etterfølger til ESP8266 mikrokontrolleren.
 
 ESP32 og ESP8266 er veldig populære til prototyping på grunn av deres lave pris, enkelhet i bruk, dokumentasjon og tilgjengelighet til informasjon på nettet.
+
+En ESP32 er ca. på størrelsen med en negl og inneholder det meste man trenger for å lage en IoT- enhet:
+
+![ESP32](./esp32_chip.png)
+
+Slike chipper kalles ofte System on a Chip (SoC) fordi de inneholder alle de viktigste komponentene til en datamaskin, slik som:
+ - prosessor
+ - minne
+ - støtteprosessorer (dvale, kryptering m.m.)
+ - trådløse kommunikasjonsgrensesnitt (WiFi og Bluetooth)
+ - trådbaserte kommunikasjonsgrensesnitt (SPI, RS232, I2C)
+
+For å gjøre det enklere å bruke chippen for prototyping settes den ofte på såkalte development boards:
+
+![ESP32](../../img/esp32-devkit.jpeg)
+
 
 ## Funksjoner
 * CPU: Xtensa dual-core (eller single-core) 32-bit LX6 microprocessor, på 160 eller 240 MHz.
