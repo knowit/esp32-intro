@@ -35,6 +35,33 @@ ESP32 og ESP8266 er veldig populære til prototyping på grunn av deres lave pri
     * Hardwareaksellerert kryptering: AES, SHA-2, RSA, m.m.
 * Støtte for lavt strømforbruk
 
+## Pins
+
+ESP32 har mange innganger og utganger. Enkelte av disse har mange moduser, mens enkelte har begrensninger. Noen av pinnene er veldig spesifikke brukes til
+å gi strøm til andre enheter eller for å 
+boote enheten.
+
+Pins som kan har mange bruksområder kalles som oftes General Purpose Input Output (GPIO). Disse har har mange bruksområder. Hva de skal brukes til
+settes av programvaren i chippen.
+
+Eksempel på bruksområder for GPIOer:
+- lese av verdier fra analoge sensorer (f.eks temperatursensor)
+- kommunisere med digitale sensorer (f.eks GPS)
+- kommunisere med andre mikrokontrollere
+- touch-sensorer (merker om de blir berørt)
+- digitale utganger (f.eks skru av eller på en LED/ lampe)
+- digitale utganger med PWM (f.eks dimme en LED/ lampe)
+
+Dette er to enkle eksempler som viser oppsett av to pins, en som inngang (pin 32) og en som utgang (pin 34):
+
+```
+pinMode(32, INPUT);
+pinMode(34, OUTPUT);
+```
+
+Følgende diagram viser såkalt pinout av ESP32 (hva de ulike pins kan brukes til):
+
+
 ![ESP32 Pinout](./esp32-devkitc-v4-broche-gpio-pinout-2021-1024x553.jpeg)
 
 Kilde: [diyprojects.io](https://diyprojects.io/)
