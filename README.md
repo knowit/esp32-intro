@@ -29,5 +29,5 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 * [LED og PWM](./Leksjoner/LED_PWM/README.md)
 
 ### Feilsøking
-* [Problemer med seriport](./Feilsoeking/Serieport/README.md)
+* [Problemer med serieport](./Feilsoeking/Serieport/README.md)
 * [LED lyser ikke](./Feilsoeking/LEDPoler/README.md)
