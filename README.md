@@ -1,6 +1,8 @@
 
 # Om kurset
-Kurset gir en kort innføring i bruk av ESP32 med Arduinoplattformen. Kurset viser hvordan du kan lage enkle, programmerbare maskiner som kommuniserer med standard hardware som brytere, lamper, m.m.. Målet er at kurset skal gi inspirasjon til å realisere egne ideer.
+Kurset gir en kort innføring i programmering og bruk av mikrokontrolleren ESP32 ved hjelp av Arduinoplattformen. Kurset viser hvordan du kan lage enkle, programmerbare maskiner som kommuniserer med standard hardware som brytere, lamper, tilkobling til WiFi og kommunikasjon over HTTP. Målet er at kurset skal gi inspirasjon til å lage dine egne maskiner.
+
+Kurset krever ingen forkunnskaper i elektronikk eller lavnivåprogrammering. Vi kommer til å lage enkle kretser og lage enkle, korte programmer i C++. Du må ha en datamaskin med USB-A- port eller passende overgang.
 
 ## Utstyr
 Du trenger en datamaskin og noen komponenter for å gjennomføre kurset.
