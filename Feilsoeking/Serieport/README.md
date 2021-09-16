@@ -34,4 +34,21 @@ upload_port = /dev/cu.SLAB_USBtoUART
 monitor_port = /dev/cu.SLAB_USBtoUART
 ```
 
+### Linux
 
+#### Sjekk tilkobling
+
+I Ubuntu kan du sjekke om du har ESP32 tilkoblet med kommandoen:
+```sudo dmesg | grep tty```
+
+Du skal da få opp en port med beskrivelsen "cp210x converter now attached to ttyUSB0"
+
+#### Permission denied
+
+Får du denne feilmeldingen?
+
+```Cannot open /dev/ttyUSB0: Permission denied```
+
+Se:
+* [Cannot open /dev/ttyUSB0: Permission denied #26](https://github.com/esp8266/source-code-examples/issues/26)
+* [error: cannot access /dev/ttyUSB0” Arduino (NodeMCU) esp8266](https://circuits4you.com/2018/06/25/arduino-error-cannot-access-dev-ttyusb0/)

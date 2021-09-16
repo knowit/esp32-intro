@@ -9,6 +9,12 @@
 * Trekk og slipp applikasjonen ```Visual Studio Code``` inn i ```Applications``` 
 * Start ```Visual Studio Code```
 
+### Ubuntu
+* Kjør ```sudo snap install code --classic``` i terminalen
+
+OBS! Hvis du senere får feilmelding og manglende, python- støtte, se:
+[Linux: 'apt-get install python3-venv' #85
+](https://github.com/platformio/platformio-core-installer/issues/85)
 
 ## Installasjon av Platform.io
 
