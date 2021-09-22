@@ -1,5 +1,5 @@
 
-![logo](./img/platformio-logo.svg)
+![logo](./img/platformio-logo.png)
 
 platform.io er et kryssplattform rammeverk som forenkler utvikling av programmer for mikrokontrollere. Rammeverket kan kjøres fra kommandolinje eller integreres med IDE. Mest brukte IDE for platform.io
 er Visual Studio Code.
