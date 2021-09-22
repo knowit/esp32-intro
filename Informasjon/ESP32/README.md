@@ -21,6 +21,25 @@ For å gjøre det enklere å bruke chippen for prototyping settes den ofte på s
 
 ![ESP32](../../img/esp32-devkit.jpeg)
 
+Det finnes mange forskjellige typer development boards fra mange forskjellige produsenter. Disse har forskjellige inkluderte enheter og størrelser. For eksempel, har noen tilkoblet kamera, og andre har tilkoblet batterier e.l.  
+
+## Språk og utviklingsmiljøer
+
+Det er mulig å benytte flere ulike språk, men C++ er mest vanlig. Per Buer fra Knowit har laget et introkurs i micropython på ESP32 som du kan se på [youtube](https://www.youtube.com/watch?v=VxN0Ps51OJU&t=1413s).
+
+De mest populære C++ - plattformene er:
+ - [Arduino](https://github.com/espressif/arduino-esp32) - Som er det enkleste å bruke og det som vi skal bruke i dette kurset.
+ - [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/) - Som er en plattform spesialutviklet for ESP32 og sopm best utnytter chippen. Dette rammeverket krever litt mer innsats. Vi kommer ikke til å bruke den plattformen i dette kurset.
+
+## Spenningsnivå
+
+ESP32 bruker 3.3V som driftsspenning.
+
+Utviklingsbrettene har ofte en inkludert spenningsregulator som gjør at det kan drives med opptil 14V. Uansett vil ESP32 kun operere på 3.3V, og vil bli ødelagt dersom den får høy spenning fra f.eks en sensor.
+
+Driftspenningen begrenser valg av eksterne enheter som sensorer. Før du bruker en sensor, sjekk at den kan jobbe på 3.3V driftspenning.
+
+Arduino-brett bruker 5V, så vær oppmerksom på dette dersom du ønsker å følge eksempler på nettet som er basert på den spenningen. 
 
 ## Funksjoner
 * CPU: Xtensa dual-core (eller single-core) 32-bit LX6 microprocessor, på 160 eller 240 MHz.
