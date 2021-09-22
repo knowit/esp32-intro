@@ -15,13 +15,17 @@
 <div class="wrapper">
     <header>
         <h1><a href="https://knowit.github.io/esp32-intro/">ESP32 Intro</a></h1>
+        <p><h1>{{ site.description | default: site.github.project_tagline }}</h1></p>
+
+        <p></p>
+        <p></p>
+        <p></p>
 
         {% if site.logo %}
         <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
         <img src="https://raw.githubusercontent.com/knowit/esp32-intro/main/img/knowit_logo_black_rgb.png" />
 
-        <p><h1>{{ site.description | default: site.github.project_tagline }}</h1></p>
 
 
     </header>
