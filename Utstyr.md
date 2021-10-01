@@ -12,6 +12,7 @@ Du trenger dette ustyret for å gjennomføre alle oppgavene:
 | Breadboard (prototypebrett)	| 1 | ![](./img/bb.png)
 | ESP32 | 1 | ![](./img/esp32-devkit.jpeg)
 | Jumper wires | 5 | ![](./img/wires.png)
+| 128x64 I2C OLED Display | 1 | ![](./img/oled.png)
 
 
 I tillegg må du ha en datamaskin med Windows, Linux eller Mac. Maskinen må ha USB 2- port eller overgang til USB 2. 
