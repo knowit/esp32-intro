@@ -21,9 +21,12 @@ ESP32-en leser av potmeteret og bruker veridene til å tegne tekst og grafikk p�
 
 ### Konstruksjon
 
-**TODO: koblingsdiagram og finere bilder**
 
-![](./img/kabelsurr.jpg)
+
+![](./img/diagram.jpeg)
+![](./img/bb_1.jpg)
+![](./img/bb_2.jpg)
+![](./img/bb_3.jpg)
 
 ### I2C OLED Driver
 For å lett kunne sende kommandoer til OLED displayet trenger vi en driver. Med Platform.io er dette veldig enkelt, vi trenger bare legge en til som en ekstern avhengighet: `lib_deps = thingpulse/ESP8266 and ESP32 OLED driver for SSD1306 displays@^4.2.1`
