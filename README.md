@@ -28,6 +28,7 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 * [WiFi og REST](./Leksjoner/WiFiOgREST/README.md)
 * [Les potmeter](./Leksjoner/LesPotmeter/README.md)
 * [LED og PWM](./Leksjoner/LED_PWM/README.md)
+* [I2C OLED](./Leksjoner/I2COLED/README.md)
 
 ### Feilsøking
 * [Problemer med serieport](./Feilsoeking/Serieport/README.md)
