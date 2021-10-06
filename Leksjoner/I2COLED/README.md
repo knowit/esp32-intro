@@ -90,6 +90,6 @@ Når programmet er lastet opp og kjører, vrir du på potmeteret og ser `x` og `
 
 
 ![](./img/resultat0.jpeg)
-![](./img/resultat0.jpeg)
+![](./img/resultat1.jpeg)
 
 
