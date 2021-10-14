@@ -21,9 +21,13 @@ ESP32-en leser av potmeteret og bruker veridene som inndata i ett nevralt nett
 
 ### Konstruksjon
 
-**TODO: koblingsdiagram og finere bilder**
+Konstruksjonen er den samme som for [Oppgave I2C OLED](../I2COLED/README.md)
 
-![](./img/kabelsurr.jpg)
+![](./img/bb_1.jpg)
+![](./img/bb_2.jpg)
+![](./img/diagram.jpeg)
+
+**OBS!** SLK og SLA har samme betydning. Det avhenger av produsent. 
 
 ### I2C OLED Driver og Tensorflow Lite
 For å lett kunne sende kommandoer til OLED displayet trenger vi en driver. Med Platform.io er dette veldig enkelt, vi trenger bare legge en til som en ekstern avhengighet: `thingpulse/ESP8266 and ESP32 OLED driver for SSD1306 displays@^4.2.1`
@@ -47,7 +51,7 @@ lib_deps =
 ### Tensorflow Lite Modell for Mikrokontrollere
 For hele prosessen se [oppskrift her](./TreneModell.md)
 
-[Last ned](./model.zip) ferdig tent modell. Zip-filen inneholder disse filene:
+[Last ned](./model.zip) ferdig trent modell. Zip-filen inneholder disse filene:
 ```
 sin_model/
     assets/
@@ -75,7 +79,7 @@ extern unsigned char sin_model_tflite[];
 extern unsigned int sin_model_tflite_len;
 ```
 
-Legg inn følgende program:
+Legg inn følgende program i ```main.cpp```:
 
 ```
 #include "Arduino.h"
