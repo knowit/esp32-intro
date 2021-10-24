@@ -30,6 +30,7 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 * [LED og PWM](./Leksjoner/LED_PWM/README.md)
 * [I2C OLED](./Leksjoner/I2COLED/README.md)
 * [Nevralt nettverk inferens](./Leksjoner/NevraltNettverkInferens/README.md)
+* [TM1638](./Leksjoner/TM1638/README.md)
 
 ### Feilsøking
 * [Problemer med serieport](./Feilsoeking/Serieport/README.md)
