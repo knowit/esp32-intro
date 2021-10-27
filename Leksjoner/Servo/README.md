@@ -18,8 +18,8 @@ I denne leksjonen skal vi teste ut på koble servomotor til mikrokontrolleren.
 ### Konstruksjon
 
 ![](./img/diagram.jpeg)
-![](img/bb1.png)
-![](img/bb2.png)
+![](./img/bb1.png)
+![](./img/bb2.png)
 
 ### TM1638 Driver
 
