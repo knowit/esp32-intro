@@ -1,8 +1,6 @@
 
 ## TM1638
 
-TM1638 er en chip 
-
 TM1638 -chippen er en mikrokontroller dedikert til å drive lysdioder, numerisk display og tastaturskanningsgrensesnitt. Den integrerer et mikrokontroller med digitalt grensesnitt.
 
 Chippen selges ofte i kombinasjon med mange billige moduler som inkluderer bl.a. LEDs, fysiske knapper m.m. Disse kan være veldig nyttige for å lage fysisk brukergrensesnitt siden de tilbyr mye funksjonalitet for en billig penge og et fåtall av innganger og utganger.

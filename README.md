@@ -31,6 +31,7 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 * [I2C OLED](./Leksjoner/I2COLED/README.md)
 * [Nevralt nettverk inferens](./Leksjoner/NevraltNettverkInferens/README.md)
 * [TM1638](./Leksjoner/TM1638/README.md)
+* [Servo](./Leksjoner/Servo/README.md)
 
 ### Feilsøking
 * [Problemer med serieport](./Feilsoeking/Serieport/README.md)
