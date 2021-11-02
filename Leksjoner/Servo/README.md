@@ -17,9 +17,17 @@ I denne leksjonen skal vi teste ut på koble servomotor til mikrokontrolleren.
 
 ### Konstruksjon
 
+Sett armen på servoen slik:
+![](./img/servo_uten_arm.png)
+![](./img/servo_med_arm.png)
+
+
+Koble kretsen slik:
 ![](./img/diagram.jpeg)
 ![](./img/bb1.png)
 ![](img/bb_side.png)
+
+
 
 ### TM1638 Driver
 
@@ -64,4 +72,4 @@ void loop() {
 
 ```
 
-Når du kjører koden, styrer mikrkontrolleren servomotoren slik at den går sakte i en retning frem til 180 grader og deretter raskt tilbake til 0 grader.
+Når du kjører koden, styrer mikrokontrolleren servomotoren slik at den går sakte i en retning frem til 180 grader og deretter raskt tilbake til 0 grader.
