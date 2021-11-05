@@ -10,7 +10,7 @@ I denne leksjonen skal vi teste ut på koble servomotor til mikrokontrolleren.
 
 | Type          | Antall           | Kommentar  |  Utseeende |
 | ------------- | :------------- |:-----| :----: |
-| TM1638 Led & Key | 1 | | ![](./img/servo.jpeg)
+| Servo | 1 | | ![](./img/servo.jpeg)
 | Breadboard (prototypebrett)	| 1 | | ![](../../img/bb.png)
 | ESP32 | 1 | | ![](../../img/esp32-devkit.jpeg)
 

@@ -1,5 +1,3 @@
 
-.idea/vcs.xml
-.idea/modules.xml
-.idea/esp32cam-intro.iml
-/.idea/esp32-intro.iml
+.idea
+.obsidian
