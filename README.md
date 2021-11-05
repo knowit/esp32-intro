@@ -18,7 +18,7 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 * [platform.io](./Informasjon/platformio/README.md)
 
 ### Installasjon og Oppsett
-* [Innstallasjon av platform.io](./InstallasjonOgOppsett/InstallasjonPlatformio/README.md)
+* [Installasjon av platform.io](./InstallasjonOgOppsett/InstallasjonPlatformio/README.md)
 * [Tilpasning av breadboard](./InstallasjonOgOppsett/TilpasningBreadboard/README.md)
 
 ### Leksjoner
