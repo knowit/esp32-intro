@@ -21,8 +21,13 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 * [Installasjon av platform.io](./InstallasjonOgOppsett/InstallasjonPlatformio/README.md)
 * [Tilpasning av breadboard](./InstallasjonOgOppsett/TilpasningBreadboard/README.md)
 
+### Rekkefølge på leksjoner
+Det er flere ulike måter å gjøre leksjonene på, men følgende rekkefølge anbefales:
+
+![Flytdiagram](./flyt/flyt.png)
+
 ### Leksjoner
-* [Enkle analoge kretser](./Leksjoner/LampeOgKnapp/README.md)
+* [Enkle analoge kretser](./Leksjoner/LampeOgKnapp/README.md) (kan droppes dersom du allerede har OK kjennskap til elektronikk og breadboards)
 * [Hello World](./Leksjoner/HelloWorld/README.md)
 * [Styr LED fra knapp](./Leksjoner/StyrLEDFraKnapp/README.md)
 * [WiFi og REST](./Leksjoner/WiFiOgREST/README.md)
