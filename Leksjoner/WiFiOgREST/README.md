@@ -64,6 +64,7 @@ Lim inn dette programmet og sett SSID og passord:
 #include "Arduino.h"
 #include "WiFi.h"
 #include <WebServer.h>
+#include <ArduinoJson.h>
 
 int ledPin = 32;
 const char *ssid = "X";
@@ -75,13 +76,13 @@ WebServer server(80);
 void ledOn() {
   Serial.println("LED on");
   digitalWrite(ledPin, HIGH);
-  server.send(200, "application/json", "OK");
+  server.send(200, "application/json", "{state:\"on\"}");
 }
 
 void ledOff() {
   Serial.println("LED off");
   digitalWrite(ledPin, LOW);
-  server.send(200, "application/json", "OK");
+  server.send(200, "application/json", "{state:\"off\"}");
 }
 
 void setup() {

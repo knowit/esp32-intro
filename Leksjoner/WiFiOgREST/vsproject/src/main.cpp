@@ -10,24 +10,16 @@ const char *password = "X";
 // Web server running on port 80
 WebServer server(80);
 
-// JSON data buffer
-StaticJsonDocument<250> jsonDocument;
+void ledOn() {
+  Serial.println("LED on");
+  digitalWrite(ledPin, HIGH);
+  server.send(200, "application/json", "{state:\"on\"}");
+}
 
-void handlePost()
-{
-    String body = server.arg("plain");
-    Serial.print("BODY: ");
-    Serial.println(body);
-    deserializeJson(jsonDocument, body);
-
-    // Hent verdier fra request
-    int state = jsonDocument["state"];
-    Serial.print("State: ");
-    Serial.println(state);
-    digitalWrite(ledPin, state);
-
-    // Respond to the client
-    server.send(200, "application/json", "{}");
+void ledOff() {
+  Serial.println("LED off");
+  digitalWrite(ledPin, LOW);
+  server.send(200, "application/json", "{state:\"off\"}");
 }
 
 void setup() {
@@ -51,12 +43,13 @@ void setup() {
     Serial.print("Connected to the WiFi network. My IP: ");
     Serial.println(WiFi.localIP());
 
-    server.on("/led", HTTP_POST, handlePost);
+    server.on("/led_on", ledOn);
+    server.on("/led_off", ledOff);
 
     // start server
     server.begin();
 }
 
 void loop() {
-    server.handleClient(); // håndterer innkomnende trafikk
+    server.handleClient(); // håndterer innkomne trafikk
 }
