@@ -24,7 +24,7 @@ Elementær kunnskap om programmering (Java, C, Ruby, Perl e.l.).
 ### Rekkefølge på leksjoner
 Det er flere ulike måter å gjøre leksjonene på, men følgende rekkefølge anbefales:
 
-![Flytdiagram](./flyt/flyt.png)
+![Flytdiagram](./Leksjoner/flyt/flyt.png)
 
 ### Leksjoner
 * [Enkle analoge kretser](./Leksjoner/LampeOgKnapp/README.md) (kan droppes dersom du allerede har OK kjennskap til elektronikk og breadboards)
