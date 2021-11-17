@@ -11,7 +11,7 @@ ESP32-en leser av potmeteret og bruker veridene som inndata i ett nevralt nett
 
 ### Du trenger
 
-| Type          | Antall           | Kommentar  |  Utseeende |
+| Type          | Antall           | Kommentar  |  Utseende  |
 | ------------- | :------------- |:-----| :----: |
 | Potmeter	| 1 | | ![](../../img/potmeter.png)
 | 128x64 I2C OLED Display| 1 | | ![](../../img/oled.png)

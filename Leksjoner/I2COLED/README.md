@@ -1,17 +1,15 @@
 
 ## I2C OLED
 
-Denne leksjonen byggere videre på [Les potmeter](../LesPotmeter/README.md)
-
-**TODO: into tekst**
+__VIKTIG:__ Denne leksjonen byggere videre på [Les potmeter](../LesPotmeter/README.md)
 
 ### Funksjonalitet
 
-ESP32-en leser av potmeteret og bruker veridene til å tegne tekst og grafikk på en OLED skjerm
+ESP32-en leser av potmeteret og bruker verdiene til å tegne tekst og grafikk på en OLED skjerm
 
 ### Du trenger
 
-| Type          | Antall           | Kommentar  |  Utseeende |
+| Type          | Antall           | Kommentar  |  Utseende  |
 | ------------- | :------------- |:-----| :----: |
 | Potmeter	| 1 | | ![](../../img/potmeter.png)
 | 128x64 I2C OLED Display| 1 | | ![](../../img/oled.png)

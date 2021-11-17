@@ -10,7 +10,7 @@
 ### Du trenger
 
 
-| Type          | Antall           | Kommentar  |  Utseeende |
+| Type          | Antall           | Kommentar  |  Utseende  |
 | ------------- | :------------- |:-----| :----: |
 | LED           | 1    | Lampe. Farge og størrelse kan variere | ![LED](../../img/led.png)
 | Trykkbryter	| 1	   |   |  ![Switch](../../img/button.png)

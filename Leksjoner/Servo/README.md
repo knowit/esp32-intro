@@ -8,7 +8,7 @@ I denne leksjonen skal vi teste ut på koble servomotor til mikrokontrolleren.
 
 ### Du trenger
 
-| Type          | Antall           | Kommentar  |  Utseeende |
+| Type          | Antall           | Kommentar  |  Utseende  |
 | ------------- | :------------- |:-----| :----: |
 | Servo | 1 | | ![](./img/servo.jpeg)
 | Breadboard (prototypebrett)	| 1 | | ![](../../img/bb.png)

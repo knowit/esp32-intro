@@ -17,7 +17,7 @@ Vi begynner først med en svært enkel krets:
 
 #### Du trenger
 
-| Type          | Antall           |  Utseeende |
+| Type          | Antall           |  Utseende |
 | ------------- | :------------- | :----: |
 | LED           | 1    |  ![LED](../../img/led.png) (farge kan variere)
 | Motstand 330 Ohm eller 220 ohm | 1 |  ![](../../img/330ohm.png) 	
@@ -50,7 +50,7 @@ Denne gangen blir det bare bittelittegranne vanskeligere. Vi legger inn en knapp
 
 #### Du trenger
 
-| Type          | Antall           |  Utseeende |
+| Type          | Antall           |  Utseende |
 | ------------- | :------------- | :----: |
 | LED           | 1    |  ![LED](../../img/led.png) (farge kan variere)
 | Trykkbryter	| 1	   |    ![](../../img/button.png)

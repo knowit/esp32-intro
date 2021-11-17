@@ -11,7 +11,7 @@ I denne leksjonen skal vi teste ut enkle programmer som utnytter funksjonalitete
 
 ### Du trenger
 
-| Type          | Antall           | Kommentar  |  Utseeende |
+| Type          | Antall           | Kommentar  |  Utseende  |
 | ------------- | :------------- |:-----| :----: |
 | TM1638 Led & Key | 1 | | ![](./img/ledkey.jpeg)
 | Breadboard (prototypebrett)	| 1 | | ![](../../img/bb.png)
