@@ -10,7 +10,7 @@ ESP32 har såkalte PWM- kanaler tilgjengelig som gir lavnivåfunksjonalitet for 
 
 ### Du trenger
 
-| Type          | Antall           | Kommentar  |  Utseeende |
+| Type          | Antall           | Kommentar  |  Utseende  |
 | ------------- | :------------- |:-----| :----: |
 | Potmeter	| 1 | | ![LED](../../img/potmeter.png)
 | Breadboard (prototypebrett)	| 1 | | ![](../../img/bb.png)
@@ -35,7 +35,7 @@ Programmet gjør følgende
 2. LEDen dimmes tilsvarende verdien på potmeteret.
 
 
-```
+```cpp
 #include "Arduino.h"
 int potPin = 35;
 int ledPin = 32;

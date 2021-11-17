@@ -20,7 +20,7 @@ Ved programmering av mikrokontrollere bør man alltid begynne med et veldig enke
 * Hvis du får spørsmålet "Do you trust the authors of the files in this folder?", klikk på Trust the authors .. og deretter "Yes, I trust the authors"
 * Istedenfor å kopiere inn kodeeksempelet ````Blink```` inn i ```main.cpp```,  kopierer du inn dette istedet:
 
-```
+```cpp
 #include "Arduino.h"
 
 int counter = 0;
@@ -38,13 +38,13 @@ void loop() {
 
 * Åpne filen ```platform.ini``` og legg til en ny linje:
 
-```
+```ini
 monitor_speed = 115200
 ```
 
 Seksjonen ```[env:esp32dev]``` skal nå se ca. slik ut:
 
-```
+```ini
 [env:esp32dev]
 platform = espressif32
 board = esp32dev

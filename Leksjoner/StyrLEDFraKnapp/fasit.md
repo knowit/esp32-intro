@@ -1,6 +1,6 @@
 ### Fasit: Styr LED fra Lampe
 
-```
+```cpp
 
 #include "Arduino.h"
 int buttonPin = 35;

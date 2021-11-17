@@ -21,7 +21,7 @@ LED og PWM ^ueXN1KS5
 
 I2C OLED ^ZnWh58gY
 
-Nevralt nettverk interferens ^SZahpmQz
+Nevralt nettverk inferens ^SZahpmQz
 
 TM1638 ^3eideBfg
 
@@ -305,8 +305,8 @@ Servo ^a6sLYW84
 			],
 			"fontSize": 20,
 			"fontFamily": 2,
-			"text": "Nevralt nettverk interferens",
-			"rawText": "Nevralt nettverk interferens",
+			"text": "Nevralt nettverk inferens",
+			"rawText": "Nevralt nettverk inferens",
 			"baseline": 18,
 			"textAlign": "left",
 			"verticalAlign": "top"
@@ -843,7 +843,7 @@ Servo ^a6sLYW84
 	<g transform="translate(214.18310546875 350.1778903537327) rotate(0 58.5 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Les potmeter</text></g>
 	<g transform="translate(10 350.1778903537327) rotate(0 60.5 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">LED og PWM</text></g>
 	<g transform="translate(227.18310546875 447.0546468098958) rotate(0 45.5 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">I2C OLED</text></g>
-	<g transform="translate(152.68310546875 519.8970879448784) rotate(0 120 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Nevralt nettverk interferens</text></g>
+	<g transform="translate(152.68310546875 519.8970879448784) rotate(0 120 11.5)"><text x="0" y="18" font-family="Helvetica, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Nevralt nettverk inferens</text></g>
 	<g stroke-linecap="round">
 		<g transform="translate(273.17327880859375 41.640869140625) rotate(0 -0.49017333984375 16.88519287109375)">
 			<path d="M0 0 C-0.16 5.63, -0.82 28.14, -0.98 33.77 M0 0 C-0.16 5.63, -0.82 28.14, -0.98 33.77" stroke="#000000" stroke-width="1" fill="none"></path>

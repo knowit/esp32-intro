@@ -1,17 +1,17 @@
 
 ## I2C OLED
 
-Denne leksjonen byggere videre på [Les potmeter](../LesPotmeter/README.md)
+__VIKTIG:__ Denne leksjonen byggere videre på [Les potmeter](../LesPotmeter/README.md)
 
-**TODO: into tekst**
+I denne leksjonen ser vi på hvordan ESP32 kan kommunisere med eksterne enheter over synkron seriekommunikasjon ([I2C](https://en.wikipedia.org/wiki/I%C2%B2C))
 
 ### Funksjonalitet
 
-ESP32-en leser av potmeteret og bruker veridene til å tegne tekst og grafikk på en OLED skjerm
+ESP32-en leser av potmeteret og bruker verdiene til å tegne tekst og grafikk på en OLED skjerm
 
 ### Du trenger
 
-| Type          | Antall           | Kommentar  |  Utseeende |
+| Type          | Antall           | Kommentar  |  Utseende  |
 | ------------- | :------------- |:-----| :----: |
 | Potmeter	| 1 | | ![](../../img/potmeter.png)
 | 128x64 I2C OLED Display| 1 | | ![](../../img/oled.png)
@@ -32,7 +32,7 @@ ESP32-en leser av potmeteret og bruker veridene til å tegne tekst og grafikk p�
 For å lett kunne sende kommandoer til OLED displayet trenger vi en driver. Med Platform.io er dette veldig enkelt, vi trenger bare legge en til som en ekstern avhengighet: `lib_deps = thingpulse/ESP8266 and ESP32 OLED driver for SSD1306 displays@^4.2.1`
 
 Full `platformio.ini` fil:
-```
+```ini
 [env:esp32dev]
 platform = espressif32
 board = esp32dev
@@ -47,7 +47,7 @@ lib_deps = thingpulse/ESP8266 and ESP32 OLED driver for SSD1306 displays@^4.2.1
 
 Legg inn følgende program:
 
-```
+```cpp
 #include "Arduino.h"
 #include <Wire.h>               // Only needed for Arduino 1.6.5 and earlier
 #include "SSD1306Wire.h"        // legacy: #include "SSD1306.h"

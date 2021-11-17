@@ -2,7 +2,7 @@
 Du trenger dette ustyret for å gjennomføre alle oppgavene:
 
 
-| Type          | Antall           |  Utseeende |
+| Type          | Antall           |  Utseende |
 | ------------- | :------------- | :----: |
 | LED           | 1    |  ![LED](./img/led.png)
 | Trykkbryter	| 1	   |    ![](./img/button.png)
