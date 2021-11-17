@@ -32,7 +32,7 @@ ESP32-en leser av potmeteret og bruker verdiene til å tegne tekst og grafikk p�
 For å lett kunne sende kommandoer til OLED displayet trenger vi en driver. Med Platform.io er dette veldig enkelt, vi trenger bare legge en til som en ekstern avhengighet: `lib_deps = thingpulse/ESP8266 and ESP32 OLED driver for SSD1306 displays@^4.2.1`
 
 Full `platformio.ini` fil:
-```
+```ini
 [env:esp32dev]
 platform = espressif32
 board = esp32dev
@@ -47,7 +47,7 @@ lib_deps = thingpulse/ESP8266 and ESP32 OLED driver for SSD1306 displays@^4.2.1
 
 Legg inn følgende program:
 
-```
+```cpp
 #include "Arduino.h"
 #include <Wire.h>               // Only needed for Arduino 1.6.5 and earlier
 #include "SSD1306Wire.h"        // legacy: #include "SSD1306.h"

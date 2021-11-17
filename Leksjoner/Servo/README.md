@@ -34,7 +34,7 @@ Koble kretsen slik:
 For å kommunisere med TM1638-chippen trenger vi en driver. Driveren legges iss om en ekstern avhengighet: `roboticsbrno/ServoESP32 @ ^1.0.3`
 
 Full `platformio.ini` fil:
-```
+```ini
 [env:esp32dev]
 platform = espressif32
 board = esp32dev
@@ -48,7 +48,7 @@ lib_deps =
 
 Legg inn følgende program:
 
-```
+```cpp
 #include <Arduino.h>
 #include <Servo.h>
 

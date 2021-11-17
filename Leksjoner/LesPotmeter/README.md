@@ -32,7 +32,7 @@ Potentiometeret har en variabel motstand som endrer seg når du vrir på det.
 
 Legg inn følgende program:
 
-```
+```cpp
 #include "Arduino.h"
 int potPin = 35;
 

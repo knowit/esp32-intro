@@ -41,7 +41,7 @@ For mer informasjon om pull- up og pull- down, se
 
 Lim inn følgende program:
 
-```
+```cpp
 #include "Arduino.h"
 int buttonPin = 35;
 int ledPin = 32;
@@ -89,7 +89,7 @@ Programmet fungerer slik:
 
 Hvis du vil at lampen skal lyse når knappen ikke er trykket inn, og ikke lyse når knappen er trykket inn, så kan du endre siste linje i loop slik:
 
-```
+```cpp
 digitalWrite(ledPin, !buttonState);
 ```
 

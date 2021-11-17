@@ -86,7 +86,7 @@ Eksempel på bruksområder for GPIOer:
 
 Dette er to enkle eksempler som viser oppsett av to pins, en som inngang (pin 32) og en som utgang (pin 34):
 
-```
+```cpp
 pinMode(32, INPUT);
 pinMode(34, OUTPUT);
 ```

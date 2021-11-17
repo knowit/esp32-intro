@@ -35,7 +35,7 @@ Programmet gjør følgende
 2. LEDen dimmes tilsvarende verdien på potmeteret.
 
 
-```
+```cpp
 #include "Arduino.h"
 int potPin = 35;
 int ledPin = 32;

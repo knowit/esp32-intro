@@ -29,7 +29,7 @@ I denne leksjonen skal vi teste ut enkle programmer som utnytter funksjonalitete
 For å kommunisere med TM1638-chippen trenger vi en driver. Driveren legges iss om en ekstern avhengighet: `TM1638plus`
 
 Full `platformio.ini` fil:
-```
+```ini
 [env:esp32dev]
 platform = espressif32
 board = esp32dev
@@ -42,7 +42,7 @@ lib_deps = gavinlyonsrepo/TM1638plus @ ^1.7.0
 
 Legg inn følgende program:
 
-```
+```cpp
 #include <TM1638plus.h>
 
 #define STROBE_TM 33
@@ -74,7 +74,7 @@ Når du kjører koden vises teksten "knowit" og "hwguild" om hverandre på skjer
 
 I tillegg til å skrive tekst på displayet kan du også lese av hvilke knapper so trykkes og tenne rekken med LEDS over displayet som i dette eksempelet:
 
-```
+```cpp
 #include <TM1638plus.h>
 
 #define STROBE_TM 33

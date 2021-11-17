@@ -17,14 +17,14 @@ Description: CP2104 USB to UART Bridge Controller - CP2104 USB to UART Bridge Co
 
 * Åpne filen ```platform.io```
 * Legg til disse to linjene:
-```
+```ini
 upload_port = /dev/cu.SLAB_USBtoUART
 monitor_port = /dev/cu.SLAB_USBtoUART
 ```
 
 Seksjonen ```[env:esp32dev]``` skal nå se ca. slik ut:
 
-```
+```ini
 [env:esp32dev]
 platform = espressif32
 board = esp32dev

@@ -9,7 +9,7 @@ Bruk samme krets som i [Styr LED fra knapp](../StyrLEDFraKnapp/README.md)
 
 Lin inn følgende program, og sett inn korrekt nettverksnavn og passord i ```sid``` og ```password```:
 
-```
+```cpp
 #include "Arduino.h"
 #include "WiFi.h"
 
@@ -60,7 +60,7 @@ Nå skal vi lage to enkle tjenester som enten skrur av eller på LED.
 
 Lim inn dette programmet og sett SSID og passord:
 
-```
+```cpp
 #include "Arduino.h"
 #include "WiFi.h"
 #include <WebServer.h>
@@ -152,14 +152,14 @@ Vi skal lage en REST- tjeneste som lytter på POST- requester og skrur av eller 
 
 I denne oppgaven skal vi bruke json. For å gjøre dette enklere, inkluderer vi et eksternt bibliotek for dette. Legg til disse linjene i ```platformio.ini```:
 
-``` 
+```ini
 lib_deps =
      bblanchon/ArduinoJson @ ^6.18.0
 ```
 
 Lim inn dette programmet:
 
-```
+```cpp
 #include "Arduino.h"
 #include "WiFi.h"
 #include <WebServer.h>
