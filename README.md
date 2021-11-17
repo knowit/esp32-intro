@@ -38,6 +38,8 @@ Det er flere ulike måter å gjøre leksjonene på, men følgende rekkefølge an
 * [TM1638](./Leksjoner/TM1638/README.md)
 * [Servo](./Leksjoner/Servo/README.md)
 
+Hvis du er ferdig med alle oppgavene eller vil teste ut ting på egenhånd kan du se på forslag til [andre ting du kan kjøre med settet](FlereOppgaver.md).
+
 ### Feilsøking
 * [Problemer med serieport](./Feilsoeking/Serieport/README.md)
 * [LED lyser ikke](./Feilsoeking/LEDPoler/README.md)
