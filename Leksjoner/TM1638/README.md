@@ -13,7 +13,7 @@ I denne leksjonen skal vi teste ut enkle programmer som utnytter funksjonalitete
 
 | Type          | Antall           | Kommentar  |  Utseende  |
 | ------------- | :------------- |:-----| :----: |
-| TM1638 Led & Key | 1 | | ![](./img/ledkey.jpeg)
+| TM1638 Led & Key | 1 | | ![](../../img/ledkey.jpeg)
 | Breadboard (prototypebrett)	| 1 | | ![](../../img/bb.png)
 | ESP32 | 1 | | ![](../../img/esp32-devkit.jpeg)
 

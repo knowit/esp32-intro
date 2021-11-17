@@ -11,8 +11,10 @@ Du trenger dette ustyret for å gjennomføre alle oppgavene:
 | Potmeter	| 1 | ![](./img/potmeter.png)
 | Breadboard (prototypebrett)	| 1 | ![](./img/bb.png)
 | ESP32 | 1 | ![](./img/esp32-devkit.jpeg)
-| Jumper wires | 5 | ![](./img/wires.png)
+| Jumper wires | 5 | ![](./img/wires.png)  ![](./img/wires_2.png) 
 | 128x64 I2C OLED Display | 1 | ![](./img/oled.png)
+| Servo | 1 | ![](./img/servo.png)
+| Led&Key TM1638 | 1 | ![](./img/ledkey.jpeg)
 
 
 I tillegg må du ha en datamaskin med Windows, Linux eller Mac. Maskinen må ha USB 2- port eller overgang til USB 2. 
