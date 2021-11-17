@@ -3,6 +3,8 @@
 
 __VIKTIG:__ Denne leksjonen byggere videre på [Les potmeter](../LesPotmeter/README.md)
 
+I denne leksjonen ser vi på hvordan ESP32 kan kommunisere med eksterne enheter over synkron seriekommunikasjon ([I2C](https://en.wikipedia.org/wiki/I%C2%B2C))
+
 ### Funksjonalitet
 
 ESP32-en leser av potmeteret og bruker verdiene til å tegne tekst og grafikk på en OLED skjerm

@@ -1,13 +1,15 @@
 
 ## Nevralt nettverk inferens
 
-Denne leksjonen bygger videre på [I2C OLED](../I2COLED/README.md)
+__VIKTIG:__ Denne leksjonen bygger videre på [I2C OLED](../I2COLED/README.md)
 
-**TODO: intro tekst**
+I denne leksjonen ser vi på hvordan vi kan ta et ferdig trent nevralt nettverk (laget med [TensorFlow](https://www.tensorflow.org/)) og kjøre det på en mikrokontroller med [TensorFlow Lite](https://www.tensorflow.org/lite) for [mikrokontrollere](https://www.tensorflow.org/lite/microcontrollers)
+
+For enkelhetens skyld så skipper denne leksjonen hvordan lage en mikrokontroller optimalisert TensorFlow Lite modell, men hvis du vil lese mer så er kode og prosess [beskrevet her](./TreneModell.md).
 
 ### Funksjonalitet
 
-ESP32-en leser av potmeteret og bruker veridene som inndata i ett nevralt nett 
+ESP32-en leser av potmeteret og bruker veridene som inndata i et nevralt nett 
 
 ### Du trenger
 
@@ -35,7 +37,7 @@ For å lett kunne sende kommandoer til OLED displayet trenger vi en driver. Med 
 I tilegg trenger vi også en versjon av Tensorflow Lite for mikrokontrollere konfigurert for ESP32 med Arduino Framework: `https://github.com/tcirstea/Arduino_TensorFlowLite_ESP32.git` (Dette er en kopi av https://github.com/tensorflow/tflite-micro konfigurert for platform.io, arduino og ESP32)
 
 Full `platformio.ini` fil:
-```
+```ini
 [env:esp32dev]
 build_flags = -DTF_LITE_USE_GLOBAL_MIN -DTF_LITE_USE_GLOBAL_MAX
 platform = espressif32
@@ -49,7 +51,7 @@ lib_deps =
 ```
 
 ### Tensorflow Lite Modell for Mikrokontrollere
-For hele prosessen se [oppskrift her](./TreneModell.md)
+For hele prosessen: [les mer her](./TreneModell.md)
 
 [Last ned](./model.zip) ferdig trent modell. Zip-filen inneholder disse filene:
 ```
@@ -72,7 +74,7 @@ sin_model_quantization_params.json
 ### Program
 
 Kopier `sin_model.cc` inn i `src/` mappen og lag en header-fil (`sin_model.h`) for den i `include/` mappen:
-```
+```cpp
 #pragma once
 
 extern unsigned char sin_model_tflite[];
@@ -81,7 +83,7 @@ extern unsigned int sin_model_tflite_len;
 
 Legg inn følgende program i ```main.cpp```:
 
-```
+```cpp
 #include "Arduino.h"
 #include <Wire.h>               // Only needed for Arduino 1.6.5 and earlier
 #include "SSD1306Wire.h"        // legacy: #include "SSD1306.h"
