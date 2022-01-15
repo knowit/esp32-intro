@@ -1,5 +1,7 @@
 ## Feilsøking: Serieport
 
+Se også: [Serieport på Windows](../SerieportWindows/README.md)
+
 Hvis du får en feilmelding med teksten ```Resource busy: '/dev/cu.usbserial-XXX``` eller liknende, gjør du følgende:
 
 ### Mac:

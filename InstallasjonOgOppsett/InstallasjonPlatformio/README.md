@@ -21,7 +21,9 @@ OBS! Hvis du senere får feilmelding og manglende, python- støtte, se:
 * Pek din favorittnettleser på [platform.io - Get for VSCode](https://platformio.org/install/ide?install=vscode)
 * Følg instruksjonene på siden
 
- 
+ Problemer? Se:
+- [Feilsøking: Serieport på Windows](../../Feilsoeking/SerieportWindows/README.md)
+- [Feilsøking: Serieport](../../Feilsoeking/Serieport/README.md)
 
 
 
