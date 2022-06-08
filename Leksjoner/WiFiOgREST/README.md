@@ -49,7 +49,7 @@ void loop() {}
 - ```#include "WiFi.h"``` inkluderer innebygget ESP-32 bibliotek for å håndtere WiFi
 - ```WiFi.begin(ssid, password);``` - starter WiFi- funksjonaliteten i chippen
 - ```while (WiFi.status() != WL_CONNECTED) ``` - venter til WiFi er koblet opp
-- ```WiFi.localIP()``` - returnerer IP- adressen til chippen 
+- ```WiFi.localIP()``` - returnerer IP- adressen til chippen
 
 
 
@@ -83,13 +83,13 @@ WebServer server(80);
 void ledOn() {
   Serial.println("LED on");
   digitalWrite(ledPin, HIGH);
-  server.send(200, "application/json", "{state:\"on\"}");
+  server.send(200, "application/json", "{\n\"state\":\"on\"\n}");
 }
 
 void ledOff() {
   Serial.println("LED off");
   digitalWrite(ledPin, LOW);
-  server.send(200, "application/json", "{state:\"off\"}");
+  server.send(200, "application/json", "{\n\"state\":\"off\"\n}");
 }
 
 void setup() {
@@ -146,8 +146,8 @@ Du kan nå teste ut GET- kallene ved å åpne f.eks disse adressene i en nettles
 ### Kommentarer til programmet:
 
 - ```#include <WebServer.h>"``` - inkluderer bibliotek med webtjener fra standardbiblioteket til ESP32
-- ```WebServer server(80)"``` - setter opp tjeneren på port 80 
-- ```server.on("/led_on", ledOn)"``` - knytter stien ```/led_on``` opp mot funksjonen ```ledOn``` 
+- ```WebServer server(80)"``` - setter opp tjeneren på port 80
+- ```server.on("/led_on", ledOn)"``` - knytter stien ```/led_on``` opp mot funksjonen ```ledOn```
 - ```void ledOn()"``` - implementerer funksjonalitet for å svare på stien ```/led_on```
 - ```server.begin()"``` - starter serveren
 - ```server.handleClient()"``` - ber serveren håndtere trafikk
