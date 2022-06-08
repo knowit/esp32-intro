@@ -58,6 +58,13 @@ void loop() {}
 ## HTTP GET
 Nå skal vi lage to enkle tjenester som enten skrur av eller på LED.
 
+I denne oppgaven skal vi bruke json. For å gjøre dette enklere, inkluderer vi et eksternt bibliotek for dette. Legg til disse linjene i ```platformio.ini```:
+
+```ini
+lib_deps =
+     bblanchon/ArduinoJson @ ^6.18.0
+```
+
 Lim inn dette programmet og sett SSID og passord:
 
 ```cpp
@@ -150,12 +157,7 @@ Du kan nå teste ut GET- kallene ved å åpne f.eks disse adressene i en nettles
 Nå skal implemetere samme løsning som over, men på en mer elegant måte.
 Vi skal lage en REST- tjeneste som lytter på POST- requester og skrur av eller på lampen.
 
-I denne oppgaven skal vi bruke json. For å gjøre dette enklere, inkluderer vi et eksternt bibliotek for dette. Legg til disse linjene i ```platformio.ini```:
 
-```ini
-lib_deps =
-     bblanchon/ArduinoJson @ ^6.18.0
-```
 
 Lim inn dette programmet:
 
