@@ -9,7 +9,7 @@ For enkelhetens skyld så skipper denne leksjonen hvordan lage en mikrokontrolle
 
 ### Funksjonalitet
 
-ESP32-en leser av potmeteret og bruker veridene som inndata i et nevralt nett 
+ESP32-en leser av potmeteret og bruker verdiene som inndata i et nevralt nett 
 
 ### Du trenger
 
@@ -198,6 +198,6 @@ Når programmet er lastet opp og kjører, vrir du på potmeteret og ser `x` og `
 
 
 ![](./img/resultat0.jpeg)
-![](./img/resultat0.jpeg)
+![](./img/resultat1.jpeg)
 
 

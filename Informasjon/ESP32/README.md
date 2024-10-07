@@ -1,10 +1,10 @@
 # Om ESP32
 
-ESP32 er en serie billige, mikrobrikkere med integrert Wi-Fi og Bluetooth.  De bruker lite strøm og tar liten plass.
+ESP32 er en serie billige mikrokontrollere med integrert Wi-Fi og Bluetooth.  De bruker lite strøm og tar liten plass.
 
 ESP32 er designet av Espressif Systems, et Shanghai-basert kinesisk selskap, og er produsert av TSMC ved bruk av deres 40 nm-prosess. Den er en etterfølger til ESP8266 mikrokontrolleren.
 
-ESP32 og ESP8266 er veldig populære til prototyping på grunn av deres lave pris, enkelhet i bruk, dokumentasjon og tilgjengelighet til informasjon på nettet.
+ESP32 og ESP8266 er veldig populære til prototyping på grunn av pris, enkelhet i bruk, dokumentasjon, og ikke minst mengden tilgjengelig informasjon på nettet.
 
 En ESP32 er ca. på størrelsen med en negl og inneholder det meste man trenger for å lage en IoT- enhet:
 
@@ -29,13 +29,13 @@ Det er mulig å benytte flere ulike språk, men C++ er mest vanlig. Per Buer fra
 
 De mest populære C++ - plattformene er:
  - [Arduino](https://github.com/espressif/arduino-esp32) - Som er det enkleste å bruke og det som vi skal bruke i dette kurset.
- - [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/) - Som er en plattform spesialutviklet for ESP32 og sopm best utnytter chippen. Dette rammeverket krever litt mer innsats. Vi kommer ikke til å bruke den plattformen i dette kurset.
+ - [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/) - Som er en spesialutviklet plattform for ESP32 beregnet på å utnytte det fulle potensialet i ESP32-chippen. Dette rammeverket krever litt mer innsats, og vi kommer ikke til å bruke det i dette kurset.
 
 ## Spenningsnivå
 
 ESP32 bruker 3.3V som driftsspenning.
 
-Utviklingsbrettene har ofte en inkludert spenningsregulator som gjør at det kan drives med opptil 14V. Uansett vil ESP32 kun operere på 3.3V, og vil bli ødelagt dersom den får høy spenning fra f.eks en sensor.
+Utviklingsbrettene har ofte en inkludert spenningsregulator som gjør at det kan drives med opptil 14V. Uansett vil ESP32 kun operere på 3.3V, og vil bli ødelagt dersom den får for høy spenning fra f.eks en sensor.
 
 Driftspenningen begrenser valg av eksterne enheter som sensorer. Før du bruker en sensor, sjekk at den kan jobbe på 3.3V driftspenning.
 
@@ -62,27 +62,24 @@ Arduino-brett bruker 5V, så vær oppmerksom på dette dersom du ønsker å føl
     * PWM for styring av motorer og LEDs
 * Integrerte sikkerhetmekaniser, bl.a. 
     * IEEE 802.11 standard inkludert WPA, WPA2, WPA3 og WAPI
-    * Sikker boot
+    * Secure boot
     * Kryptering av flash
     * Hardwareaksellerert kryptering: AES, SHA-2, RSA, m.m.
 * Støtte for lavt strømforbruk
 
 ## Pins
 
-ESP32 har mange innganger og utganger. Enkelte av disse har mange moduser, mens enkelte har begrensninger. Noen av pinnene er veldig spesifikke brukes til
-å gi strøm til andre enheter eller for å 
-boote enheten.
+ESP32 har mange innganger og utganger. Enkelte av disse kan ha flere bruksområder og tilpasses til ønsket bruk, mens andre har begrensninger. Noen av pinnene er spesifikke og brukes for eksempel til å gi strøm til andre enheter, eller for å reboote enheten.
 
-Pins som kan har mange bruksområder kalles som oftes General Purpose Input Output (GPIO). Disse har har mange bruksområder. Hva de skal brukes til
-settes av programvaren i chippen.
+Pins som kan har mange bruksområder kalles General Purpose Input Output (GPIO). Disse kan defineres av programvaren i chippen.
 
 Eksempel på bruksområder for GPIOer:
 - lese av verdier fra analoge sensorer (f.eks temperatursensor)
 - kommunisere med digitale sensorer (f.eks GPS)
 - kommunisere med andre mikrokontrollere
 - touch-sensorer (merker om de blir berørt)
-- digitale utganger (f.eks skru av eller på en LED/ lampe)
-- digitale utganger med PWM (f.eks dimme en LED/ lampe)
+- digitale utganger (f.eks skru av eller på en LED/lampe)
+- digitale utganger med PWM (f.eks dimme en LED/lampe)
 
 Dette er to enkle eksempler som viser oppsett av to pins, en som inngang (pin 32) og en som utgang (pin 34):
 

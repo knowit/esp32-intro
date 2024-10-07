@@ -16,11 +16,11 @@ ESP32 har såkalte PWM- kanaler tilgjengelig som gir lavnivåfunksjonalitet for 
 | Breadboard (prototypebrett)	| 1 | | ![](../../img/bb.png)
 | ESP32 | 1 | | ![](../../img/esp32-devkit.jpeg)
 | LED           | 1    | Lampe. Farge og størrelse kan variere | ![LED](../../img/led.png)
-| Motstand 330 Ohm eller 200 ohm | 1 | Denne beskytter LED mot for høy strøm | ![](../../img/330ohm.png)
+| Motstand 330Ω | 1 | Denne beskytter LED mot for høy strøm | ![](../../img/330ohm.png)
 
 ### Konstruksjon
 
-Konsrtruksjonen bygger videre på [Les potmeter](../LesPotmeter/README.md).
+Konstruksjonen bygger videre på [Les potmeter](../LesPotmeter/README.md).
 
 ![](./led_pwm_bb_1.png)
 ![](./led_pwm_bilde_1.jpg)
@@ -29,10 +29,10 @@ Konsrtruksjonen bygger videre på [Les potmeter](../LesPotmeter/README.md).
 
 ### Kode
 
-Programmet gjør følgende
+Programmet gjør følgende:
 
-1. Leser potmeterets verdi (du får det som en int mellom 0 og 1023.
-2. LEDen dimmes tilsvarende verdien på potmeteret.
+1. Leser potmeterets verdi (du får det som en int mellom 0 og 1023.)
+2. LED'en dimmes tilsvarende verdien på potmeteret.
 
 
 ```cpp
