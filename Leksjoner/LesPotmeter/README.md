@@ -1,17 +1,13 @@
 
 ## Les potmeter
 
-Et potmeter (fullt navn: på engelsk: potentiometer, på nynorsk: potensiometer) er en komponent som endrer motstand når du vrir på akselen. Mange kjenner disse igjen fra volumkontroller o.l.
+Et potmeter (fullt navn: på engelsk: potentiometer, på nynorsk: potensiometer) er en variabel resistor som endrer motstand når man vrir på akselen. Potmeter brukes ofte på volumkontroller og i andre applikasjoner der man ønsker å variere signalnivå. Potmeteret er en analog innenhet. Den midterste foten gir en spenning som ligger mellom de to andre avhengig av hvor posisjon på meteret.
 
-Potmeter er en analog innenhet. Den midterste foten gir en spenning som ligger mellom de to andre avhengig av hvor posisjon på meteret.
-
-For å lese verdier fra analoge innenheter, må vi bruke en ADC (Analog Digital Converter) som er innebygget i ESP32. For å gjøre dette, bruker vi funksjonen ```analogRead```.
+For å lese verdier fra analoge innenheter må vi bruke en ADC (Analog Digital Converter), som er innebygget i ESP32. For å gjøre dette, bruker vi funksjonen ```analogRead```.
 
 ### Funksjonalitet
 
 ESP32-en leser av potmeteret og rapporterer verdien tilbake til datamaskinen over serieport.
-
-Potentiometeret har en variabel motstand som endrer seg når du vrir på det.
 
 ### Du trenger
 
@@ -30,7 +26,7 @@ Potentiometeret har en variabel motstand som endrer seg når du vrir på det.
 
 ### Program
 
-Legg inn følgende program:
+Lim inn følgende program:
 
 ```cpp
 #include "Arduino.h"
@@ -48,7 +44,7 @@ void loop() {
 }
 ```
 
-Når programmet er lastet opp og kjører, vrir du på potmeteret og ser at det leses ut ulike verider:
+Når programmet er lastet opp og kjører, vrir du på potmeteret og ser at det leses ut ulike verdier:
 
 
 ```

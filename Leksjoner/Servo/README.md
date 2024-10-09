@@ -4,7 +4,7 @@
 
 ### Funksjonalitet
 
-I denne leksjonen skal vi teste ut på koble servomotor til mikrokontrolleren.
+I denne leksjonen skal vi koble en servomotor til mikrokontrolleren.
 
 ### Du trenger
 
@@ -31,7 +31,7 @@ Koble kretsen slik:
 
 ### TM1638 Driver
 
-For å kommunisere med TM1638-chippen trenger vi en driver. Driveren legges iss om en ekstern avhengighet: `roboticsbrno/ServoESP32 @ ^1.0.3`
+For å kommunisere med TM1638-chippen trenger vi en driver. Driveren legges inn i platform.io som en ekstern avhengighet: `roboticsbrno/ServoESP32 @ ^1.0.3`
 
 Full `platformio.ini` fil:
 ```ini

@@ -7,7 +7,7 @@ ESP32 har innebygget WiFi. Den kan være en webserver, en webklient, aksesspunkt
 
 Bruk samme krets som i [Styr LED fra knapp](../StyrLEDFraKnapp/README.md)
 
-Lin inn følgende program, og sett inn korrekt nettverksnavn og passord i ```sid``` og ```password```:
+Lim inn følgende program, og sett inn korrekt nettverksnavn og passord i ```sid``` og ```password```:
 
 ```cpp
 #include "Arduino.h"
@@ -221,7 +221,7 @@ void setup() {
 }
 
 void loop() {
-    server.handleClient(); // håndterer innkomnende trafikk
+    server.handleClient(); // håndterer innkommende trafikk
 }
 ```
 

@@ -4,9 +4,9 @@
 
 #### Funksjonalitet
 
-Vi skal lage to enkle kretser som ikke bruker datakraften i mikrokontrolleren, men bruker den kun som strømkilde.
+Vi skal lage to enkle kretser som ikke bruker datakraften i mikrokontrolleren, men bruker den som strømkilde.
 
-Hensikten er å bli kjent med bruk av breadboard og tolkning av enkle elektroniske kretser.
+Hensikten er å bli kjent med bruk av breadboard og kunne tolke enkle elektroniske kretser.
 
 Hvis du har tidligere erfaring med tolkning av kretser og bruk av breadboard, kan du hoppe over disse oppgavene.
 
@@ -20,7 +20,7 @@ Vi begynner først med en svært enkel krets:
 | Type          | Antall           |  Utseende |
 | ------------- | :------------- | :----: |
 | LED           | 1    |  ![LED](../../img/led.png) (farge kan variere)
-| Motstand 330 Ohm eller 220 ohm | 1 |  ![](../../img/330ohm.png) 	
+| Motstand 330Ω | 1 |  ![](../../img/330ohm.png) 	
 | Breadboard (prototypebrett)	| 1 | ![](../../img/bb.png)
 | ESP32 | 1 | ![](../../img/esp32-devkit.jpeg)
 
@@ -33,9 +33,9 @@ Koble opp slik:
 ![](./lyserkonstant/lyserkontant_bilde_2.jpg)
 
 #### Forklaring
-* ESP32 fungerer som en statisk strømkilde og mer merket ```5V``` i diagrammet
-* Strømmen går fra strømkilden gjennom motstanderen og så inn i LED-en (lampen)
-* Strømmen går fra LED-en tilbake til negativ side på strømforsyningen
+* ESP32 fungerer som en statisk strømkilde og er merket ```5V``` i diagrammet
+* Strømmen går fra strømkilden gjennom motstanden og så inn i LED'en (lampen)
+* Strømmen går fra LED'en tilbake til negativ side på strømforsyningen
 
 Funksjonen til motstanden er å begrense hvor mye strøm som går gjennom LED-en slik at LED-en ikke går i stykker.
 
@@ -54,7 +54,7 @@ Denne gangen blir det bare bittelittegranne vanskeligere. Vi legger inn en knapp
 | ------------- | :------------- | :----: |
 | LED           | 1    |  ![LED](../../img/led.png) (farge kan variere)
 | Trykkbryter	| 1	   |    ![](../../img/button.png)
-| Motstand 330 Ohm eller 220 ohm | 1 |  ![](../../img/330ohm.png) 	
+| Motstand 330Ω | 1 |  ![](../../img/330ohm.png) 	
 | Breadboard (prototypebrett)	| 1 | ![](../../img/bb.png)
 | ESP32 | 1 | ![](../../img/esp32-devkit.jpeg)
 
@@ -69,5 +69,5 @@ Koble opp slik:
 
 #### Forklaring
 
-* Strømmen går fra strømkilden gjennom motstanderen, inni byteretn og (hvis bryter er trykket inn) inn i LED-en (lampen)
-* Strømmen går fra LED-en tilbake til negativ side på strømforsyningen
+* Strømmen går fra strømkilden, gjennom motstanden, inn i bryteren, og - hvis bryter er trykket inn, inn i LED'en (lampen)
+* Strømmen går fra LED'en tilbake til negativ side på strømforsyningen

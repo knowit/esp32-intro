@@ -26,7 +26,7 @@ I denne leksjonen skal vi teste ut enkle programmer som utnytter funksjonalitete
 
 ### TM1638 Driver
 
-For å kommunisere med TM1638-chippen trenger vi en driver. Driveren legges iss om en ekstern avhengighet: `TM1638plus`
+For å kommunisere med TM1638-chippen trenger vi en driver. Driveren legges til i platform.io som en ekstern avhengighet: `TM1638plus`
 
 Full `platformio.ini` fil:
 ```ini
@@ -72,7 +72,7 @@ Når du kjører koden vises teksten "knowit" og "hwguild" om hverandre på skjer
 ![](./img/tm_hwguild.png)
 ![](./img/tm_knowit.png)
 
-I tillegg til å skrive tekst på displayet kan du også lese av hvilke knapper so trykkes og tenne rekken med LEDS over displayet som i dette eksempelet:
+I tillegg til å skrive tekst på displayet kan du også lese av hvilke knapper som trykkes og tenne rekken med LED over displayet som i dette eksempelet:
 
 ```cpp
 #include <TM1638plus.h>

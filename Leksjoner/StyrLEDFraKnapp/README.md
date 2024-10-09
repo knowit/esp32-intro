@@ -15,8 +15,8 @@
 | LED           | 1    | Lampe. Farge og størrelse kan variere | ![LED](../../img/led.png)
 | Trykkbryter	| 1	   |   |  ![Switch](../../img/button.png)
 | ESP32         | 1 | | ![](../../img/esp32-devkit.jpeg)
-| Motstand 330 Ohm eller 200 ohm | 1 | Denne beskytter LED mot for høy strøm | ![](../../img/330ohm.png) 	
-| Motstand 10 k Ohm | 1  | Dette er en såkalt pull- down resistor. Mer info lenger ned på siden | ![](../../img/10kohm.png)
+| Motstand 330Ω | 1 | Denne beskytter LED mot for høy strøm | ![](../../img/330ohm.png) 	
+| Motstand 10kΩ (kΩ = kiloOhm, 10kΩ = 10000 ohm) | 1  | Dette er en såkalt pull- down resistor. Mer info lenger ned på siden | ![](../../img/10kohm.png)
 
 ### Konstruksjon
 
@@ -30,7 +30,7 @@ Her er kretsen fra tre vinkler:
 
 
 
-Motstanden på 10 KOhm som er koblet mellom bryter og jord er en såkalt pull- down motstand, og brukes for å "trekke" signalet ned til jord ( 0 V ). 
+Motstanden på 10kΩ er koblet mellom bryter og jord, og er en såkalt pull- down motstand. Denne brukes for å "trekke" signalet ned til jord (0V). 
 
 
 For mer informasjon om pull- up og pull- down, se
